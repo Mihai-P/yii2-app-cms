@@ -594,12 +594,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/dektrium/yii2-user.git",
-                "reference": "53a2decc2f9d67ddf6b6283f407e92b88407f316"
+                "reference": "df25484cc999a58490293df4fdd4209817f6ed86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/53a2decc2f9d67ddf6b6283f407e92b88407f316",
-                "reference": "53a2decc2f9d67ddf6b6283f407e92b88407f316",
+                "url": "https://api.github.com/repos/dektrium/yii2-user/zipball/df25484cc999a58490293df4fdd4209817f6ed86",
+                "reference": "df25484cc999a58490293df4fdd4209817f6ed86",
                 "shasum": ""
             },
             "require": {
@@ -647,7 +647,7 @@
                 "yii2",
                 "yii2-user"
             ],
-            "time": "2015-02-07 17:45:11"
+            "time": "2015-02-09 11:35:49"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -941,12 +941,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "06059ecce6a79a8acfeec0c18134299a6834d807"
+                "reference": "74234deab49638ef24b55a8ff5394339b613d9c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/06059ecce6a79a8acfeec0c18134299a6834d807",
-                "reference": "06059ecce6a79a8acfeec0c18134299a6834d807",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/74234deab49638ef24b55a8ff5394339b613d9c4",
+                "reference": "74234deab49638ef24b55a8ff5394339b613d9c4",
                 "shasum": ""
             },
             "require": {
@@ -1022,7 +1022,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-02-08 03:02:24"
+            "time": "2015-02-09 15:11:39"
         },
         {
             "name": "yiisoft/yii2-authclient",
@@ -1336,12 +1336,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "e4e3e176c03aaea2294a69c11a8bc165ec758ba9"
+                "reference": "b2b114d5b8ece1f4b53dade0b117983d85d1bca4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/e4e3e176c03aaea2294a69c11a8bc165ec758ba9",
-                "reference": "e4e3e176c03aaea2294a69c11a8bc165ec758ba9",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/b2b114d5b8ece1f4b53dade0b117983d85d1bca4",
+                "reference": "b2b114d5b8ece1f4b53dade0b117983d85d1bca4",
                 "shasum": ""
             },
             "require": {
@@ -1383,7 +1383,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-01-22 03:07:58"
+            "time": "2015-02-08 20:21:30"
         },
         {
             "name": "yiisoft/yii2-codeception",
