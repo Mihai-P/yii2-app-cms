@@ -49,7 +49,10 @@ return [
         [
             'class'=>'yii\web\View',
             'theme' => [
-                'pathMap' => ['@backend/views' => '@backend/themes/adminui'],   // for Admin theme which resides on extension/adminui
+                'pathMap' => [
+                    '@dektrium/user/views/security/login' => '@cms/views/security/login',
+                    '@dektrium/user/views' => ['@cms/views', '@dektrium/user/views']
+                ],   // for Admin theme which resides on extension/adminui
                 //'baseUrl' => '@web/themes/adminui',
             ],
             'renderers' => [
