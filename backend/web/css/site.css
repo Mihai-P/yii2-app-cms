@@ -14,13 +14,6 @@ body {
     padding: 70px 15px 20px;
 }
 
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
-}
-
 .jumbotron {
     text-align: center;
     background-color: transparent;
@@ -88,4 +81,16 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+
+.action-column a {
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.box-header {
+    padding: 5px 5px 5px 10px !important;
+}
+
+.box-header h1.box-title {
+    padding-top: 7px;
 }
