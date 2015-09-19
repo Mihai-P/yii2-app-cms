@@ -51,7 +51,8 @@ return [
             'theme' => [
                 'pathMap' => [
                     '@dektrium/user/views/security/login' => '@cms/views/security/login',
-                    '@dektrium/user/views' => ['@cms/views', '@dektrium/user/views']
+                    '@dektrium/user/views' => ['@cms/views', '@dektrium/user/views'],
+                    '@dektrium/user/views/admin' => ['@cms/views/admin', '@dektrium/user/views/admin']
                 ],   // for Admin theme which resides on extension/adminui
                 //'baseUrl' => '@web/themes/adminui',
             ],
