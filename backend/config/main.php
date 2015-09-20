@@ -14,7 +14,7 @@ return [
     'modules' => [
         'user' => [
             'class' => 'dektrium\user\Module',
-            'enableRegistration' => true,
+            'enableRegistration' => false,
             'admins' => ['admin', 'webmaster'],
             'modelMap' => [
                 'Profile' => 'cms\models\Profile',
