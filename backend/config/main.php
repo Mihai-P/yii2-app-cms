@@ -71,7 +71,6 @@ return [
             'theme' => [
                 'pathMap' => [
                     '@dektrium/user/views/security/login' => '@cms/views/security/login',
-                    '@dektrium/user/views' => ['@cms/views', '@dektrium/user/views'],
                     '@dektrium/user/views/admin' => ['@cms/views/admin', '@dektrium/user/views/admin'],
                     '@dektrium/user/views/recovery' => ['@cms/views/recovery', '@dektrium/user/views/recovery'],
                     '@dektrium/user/views/registration' => ['@cms/views/registration', '@dektrium/user/views/registration'],
