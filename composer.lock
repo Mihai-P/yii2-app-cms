@@ -1022,12 +1022,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mihai-P/yii2theme-adminUI.git",
-                "reference": "ce718b565088b4936b04dec9d55cbc7614e589d0"
+                "reference": "a6063eab4da5d6109c887cd49039a6a3c3679f4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mihai-P/yii2theme-adminUI/zipball/ce718b565088b4936b04dec9d55cbc7614e589d0",
-                "reference": "ce718b565088b4936b04dec9d55cbc7614e589d0",
+                "url": "https://api.github.com/repos/Mihai-P/yii2theme-adminUI/zipball/a6063eab4da5d6109c887cd49039a6a3c3679f4b",
+                "reference": "a6063eab4da5d6109c887cd49039a6a3c3679f4b",
                 "shasum": ""
             },
             "require": {
@@ -1069,7 +1069,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2015-09-20 04:35:55"
+            "time": "2015-09-20 06:28:15"
         },
         {
             "name": "yiisoft/yii2",
