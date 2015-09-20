@@ -75,7 +75,7 @@ return [
                     '@dektrium/user/views/admin' => ['@cms/views/admin', '@dektrium/user/views/admin'],
                     '@dektrium/user/views/recovery' => ['@cms/views/recovery', '@dektrium/user/views/recovery'],
                     '@dektrium/user/views/registration' => ['@cms/views/registration', '@dektrium/user/views/registration'],
-                ],   // for Admin theme which resides on extension/adminui
+                ],
                 //'baseUrl' => '@web/themes/adminui',
             ],
             'renderers' => [
