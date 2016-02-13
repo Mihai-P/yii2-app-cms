@@ -48,8 +48,8 @@ $this->beginBlock('header');
     NavBar::end();
     Header::end();
 $this->endBlock();
-?>
 
-<?php $this->beginContent('@theme/views/layouts/main.php'); ?>
-    <?= $content?>
-<?php $this->endContent();?>
+$this->beginContent('@theme/views/layouts/main.php');
+    echo $content;
+$this->endContent();
+?>

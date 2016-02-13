@@ -969,12 +969,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mihai-P/yii2-cms.git",
-                "reference": "2b543a130c87c1328373bc0b618d9db0ed01c960"
+                "reference": "d7a9822cfb5fb1d1d7ce36eaa96a4334fb1b40cd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mihai-P/yii2-cms/zipball/2b543a130c87c1328373bc0b618d9db0ed01c960",
-                "reference": "2b543a130c87c1328373bc0b618d9db0ed01c960",
+                "url": "https://api.github.com/repos/Mihai-P/yii2-cms/zipball/d7a9822cfb5fb1d1d7ce36eaa96a4334fb1b40cd",
+                "reference": "d7a9822cfb5fb1d1d7ce36eaa96a4334fb1b40cd",
                 "shasum": ""
             },
             "require": {
@@ -1005,7 +1005,7 @@
                 "cms",
                 "yii2"
             ],
-            "time": "2015-09-18 12:56:22"
+            "time": "2016-02-13 05:01:07"
         },
         {
             "name": "tez/yii2theme-adminui",
@@ -1013,12 +1013,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Mihai-P/yii2theme-adminUI.git",
-                "reference": "a6063eab4da5d6109c887cd49039a6a3c3679f4b"
+                "reference": "6b271786df6df6f12a3f9b2516c1d3fd873d9886"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Mihai-P/yii2theme-adminUI/zipball/a6063eab4da5d6109c887cd49039a6a3c3679f4b",
-                "reference": "a6063eab4da5d6109c887cd49039a6a3c3679f4b",
+                "url": "https://api.github.com/repos/Mihai-P/yii2theme-adminUI/zipball/6b271786df6df6f12a3f9b2516c1d3fd873d9886",
+                "reference": "6b271786df6df6f12a3f9b2516c1d3fd873d9886",
                 "shasum": ""
             },
             "require": {
@@ -1060,7 +1060,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2015-09-20 06:28:15"
+            "time": "2016-02-13 05:01:45"
         },
         {
             "name": "yiisoft/yii2",
