@@ -1,71 +1,55 @@
 <?php
 use backend\assets\AppAsset;
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
+use tez\theme\widgets\Header;
+use tez\theme\widgets\Nav;
+use tez\theme\widgets\NavBar;
+use tez\theme\widgets\NavBarUser;
+use tez\theme\widgets\NavBarMessage;
+use tez\theme\widgets\NavBarNotification;
+use tez\theme\widgets\NavBarTask;
+use tez\theme\widgets\Breadcrumbs;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
 
 AppAsset::register($this);
+$this->beginBlock('header');
+    Header::begin([
+        'brandLabel' => 'My Company',
+        'brandLabel' => Yii::$app->name,
+        'brandUrl' => Yii::$app->homeUrl,
+        'options' => [
+            'tag'   => 'header',
+            'class' => 'main-header',
+        ],
+    ]);
+    NavBar::begin([
+        'options' => [
+            'class' => 'navbar-static-top',
+        ],
+        'breadCrumbs' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+    ]);
+
+    $menuItems = [];
+    if (Yii::$app->user->isGuest) {
+        $menuItems[] = ['content'=> NavBarUser::Widget(),'options'=>['class'=>'']];
+    } else {
+        $menuItems[] = ['content'=> NavBarMessage::Widget(),'options'=>['class'=>'dropdown messages-menu']];
+        $menuItems[] = ['content'=> NavBarNotification::Widget(),'options'=>['class'=>'dropdown notifications-menu']];
+        $menuItems[] = ['content'=> NavBarTask::Widget(),'options'=>['class'=>'dropdown tasks-menu']];
+        $menuItems[] = ['content'=> NavBarUser::Widget(),'options'=>['class'=>'dropdown user user-menu']];
+    }
+
+    echo Nav::widget([
+        'options' => ['class' => 'nav navbar-nav'],
+        'items' => $menuItems,
+    ]);
+    NavBar::end();
+    Header::end();
+$this->endBlock();
 ?>
-<?php $this->beginPage() ?>
-<!DOCTYPE html>
-<html lang="<?= Yii::$app->language ?>">
-<head>
-    <meta charset="<?= Yii::$app->charset ?>"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?= Html::csrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
-</head>
-<body>
-    <?php $this->beginBody() ?>
-    <div class="wrap">
-        <?php
-            NavBar::begin([
-                'brandLabel' => 'My Company',
-                'brandUrl' => Yii::$app->homeUrl,
-                'options' => [
-                    'class' => 'navbar-inverse navbar-fixed-top',
-                ],
-            ]);
-            $menuItems = [
-                ['label' => 'Home', 'url' => ['/site/index']],
-            ];
-            if (Yii::$app->user->isGuest) {
-                $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
-            } else {
-                $menuItems[] = [
-                    'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                    'url' => ['/site/logout'],
-                    'linkOptions' => ['data-method' => 'post']
-                ];
-            }
-            echo Nav::widget([
-                'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => $menuItems,
-            ]);
-            NavBar::end();
-        ?>
 
-        <div class="container">
-        <?= Breadcrumbs::widget([
-            'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
-        ]) ?>
-        <?= $content ?>
-        </div>
-    </div>
-
-    <footer class="footer">
-        <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-        </div>
-    </footer>
-
-    <?php $this->endBody() ?>
-</body>
-</html>
-<?php $this->endPage() ?>
+<?php $this->beginContent('@theme/views/layouts/main.php'); ?>
+    <?= $content?>
+<?php $this->endContent();?>
